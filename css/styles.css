@@ -15,17 +15,17 @@ body {
     }
 .logo {
     font-family: 'Raleway', sans-serif;
-    font-weight: 700;
     font-size: 26px;
     line-height: 1.17;
+    letter-spacing: 0.03em;
     text-decoration: none;
     color: var(--accent-color); 
     }
 .logo-st {
     font-family: 'Raleway', sans-serif;
-    font-weight: 700;
     font-size: 26px;
     line-height: 1.17;
+    letter-spacing: 0.03em;
     text-decoration: none;
     color:var(--logo-color);
     }
@@ -36,6 +36,7 @@ body {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.17;
+    letter-spacing: 0.02em;
     }
     .site-nav-list .link:hover,
     .site-nav-list .link:focus {
@@ -62,47 +63,49 @@ body {
     color: var(--hero-color);
     text-transform: uppercase;
     text-align: center;
+    }
+.title {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
+    letter-spacing: 0.06em;
     }
 .button {
     background-color: var(--accent-color);
     color: var(--hero-color);
     cursor: pointer;
     font-family: inherit;
-    font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
+    letter-spacing: 0.06em;
     }
 .button-filter {
     cursor: pointer;
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.62;  
+    line-height: 1.62; 
+    letter-spacing: 0.03em; 
 }
 .section-title {
     color: var(--title-text-color);
     text-align: center;
-    font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
+    letter-spacing: 0.06em;
     }
 .features-title {
     color: var(--title-text-color);
     text-transform: uppercase;
-    font-weight: 700;
     font-size: 14px;
     line-height: 1.17;
+    letter-spacing: 0.03em;
     }
 .features-paragraph {
     font-size: 14px;
     line-height: 1.71;
+    letter-spacing: 0.03em;
     }
-.section-features {
-    background-color: var(--background-features-color)
-}
 .section-team {
     background-color: var(--background-team-color);
 }
@@ -111,34 +114,37 @@ body {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.17;
+    letter-spacing: 0.03em;
     }
 .name-paragraph {
     font-size: 16px;
     line-height: 1.17;
+    letter-spacing: 0.03em;
     }
 .section-portfolio {
     background-color: var(--background-features-color);
 }
 .portfolio-title {
     color: var(--title-text-color);
-    font-weight: 700;
     font-size: 18px;
     line-height: 2;
+    letter-spacing: 0.06em;
     }
 .portfolio-paragraph {
     color: var(--ptimary-text-color);
     font-size: 16px;
     line-height: 1.88; 
+    letter-spacing: 0.03em;
 }
 /*footer*/
 .footer {
-        background-color: var(--background-hero-color);
+    background-color: var(--background-hero-color);
 }
 .logo-footer {
     font-family: 'Raleway', sans-serif;
-    font-weight: 700;
     font-size: 26px;
     line-height: 1.17;
+    letter-spacing: 0.03em;
     text-decoration: none;
     color:var(--hero-color);
     }
@@ -146,17 +152,17 @@ body {
     font-style: normal;
     text-decoration: none;
     color:rgba(255, 255, 255, 0.6);
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
+    letter-spacing: 0.03em;
 }
 .contact-address {
     font-style: normal;
     text-decoration: none;
     color:#FFFFFF;
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
+    letter-spacing: 0.03em;
 }
 .visually-hidden {
         position: absolute;
