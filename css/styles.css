@@ -1,3 +1,4 @@
+
 :root {
     --ptimary-text-color:#757575;
     --title-text-color:#212121;
@@ -9,11 +10,19 @@
     --background-features-color:#F5F5F5;
     --background-team-color:#F5F4FA;
     }
+    h1, h2, h3, p {
+        margin-top: 0;
+    }
+
 body {
     color:var(--ptimary-text-color);
     font-family: 'Roboto', sans-serif;
     }
 .logo {
+    display: flex;
+    margin-right: 93px;
+}    
+.logo-w {
     font-family: 'Raleway', sans-serif;
     font-size: 26px;
     line-height: 1.17;
@@ -30,9 +39,15 @@ body {
     color:var(--logo-color);
     }
 .list, .site-nav-list, .contact-nav-list {
-    list-style: none;}
+    display: flex;
+    
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    }
 .link {
     text-decoration: none;
+    color: inherit;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.17;
@@ -46,40 +61,149 @@ body {
     .contact-nav-list .link:focus {
     color: var(--accent-color); 
     }
-    
+    .list {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 50px;
+        margin-bottom: 0;
+    }
+    .site-nav-list {
+        display: flex;
+        justify-content: center;
+        flex-grow: 1;
+        gap: 50px;
+    }
+    .contact-nav-list {
+        display: flex;
+        justify-content: flex-end;
+        gap: 50px; 
+    }
+    .list-works {
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: calc((100%-60px)/3);
+        
+    }
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 .page-header {
+   padding: 32px 0;
+   
     background-color:var(--background-header-color);
+    border: var(--background-header-color);
     }
 /*site nav*/
 .site-nav-list .link {
+   
     color: var(--title-text-color) ;
     }
+.site-nav-list {
+    display: flex;
+    flex-grow: 1;
+    }    
 .contact-nav-list .link {
     color: var(--ptimary-text-color) ;
     }
 /*hero*/
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    gap: ;
+    align-items: center;
+}
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    align-items: center;
+}
+.container {
+    width: 1230px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.footer-container {
+    width: 1230px;
+    padding-left: 215px;
+}
+.section {
+
+}
 .hero {
+    padding: 200px 452px 280px;
     background-color: var(--background-hero-color);
     color: var(--hero-color);
     text-transform: uppercase;
     text-align: center;
+    width: 1600px;
+    height: 600px;
+ 
     }
 .title {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    
+    width: 696px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
+    
     }
 .button {
+    margin-top: 40px;
+    border: 2px solid transparent;
     background-color: var(--accent-color);
     color: var(--hero-color);
     cursor: pointer;
     font-family: inherit;
+    font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
+    border-radius: 4px;
+    padding: 10px 32px;
+    min-width: 216px;
+    height: 50px;
+    
     }
+.button-filter-whole {
+    margin-top: 94px;
+    padding: 6px 25px;
+    min-width: 73px;
+    height: 38px;
+    background-color: var(--accent-color);
+    color: var(--hero-color);
+    border: 2px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62; 
+    letter-spacing: 0.03em; 
+}
+
 .button-filter {
+    
+    margin-top: 94px;
+    padding: 6px 22px;
+    min-width: 73px;
+    height: 38px;
+    background-color: var(--background-team-color);
+    color: var(--title-text-color);
+    border: 2px solid transparent;
+    border-radius: 4px;
     cursor: pointer;
     font-family: inherit;
     font-weight: 500;
@@ -88,13 +212,24 @@ body {
     letter-spacing: 0.03em; 
 }
 .section-title {
+    margin: 0;
+    padding-top: 50px;
     color: var(--title-text-color);
     text-align: center;
     font-size: 36px;
     line-height: 1.17;
     letter-spacing: 0.06em;
+   
+    }
+.section-features {
+   
+    margin: 0;
+    padding: 94 px 215px 118px;
+   
     }
 .features-title {
+    padding-top: 94px;
+    margin-bottom: 0;
     color: var(--title-text-color);
     text-transform: uppercase;
     font-size: 14px;
@@ -102,14 +237,23 @@ body {
     letter-spacing: 0.03em;
     }
 .features-paragraph {
+    margin-top: 10px;
+    margin-bottom: 0;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     }
 .section-team {
+    margin: 0;
+    padding: 94px 215px;
     background-color: var(--background-team-color);
+ 
 }
 .name-title {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 0;
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 16px;
@@ -117,25 +261,36 @@ body {
     letter-spacing: 0.03em;
     }
 .name-paragraph {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 0;
     font-size: 16px;
     line-height: 1.17;
     letter-spacing: 0.03em;
     }
 .section-portfolio {
+    
     background-color: var(--background-features-color);
+    border: var(--background-features-color)
 }
 .portfolio-title {
+    margin-top: 20px;
+    margin-bottom: 0;
     color: var(--title-text-color);
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
     }
 .portfolio-paragraph {
+    margin-top: 4px;
+    margin-bottom: 0;
     color: var(--ptimary-text-color);
     font-size: 16px;
     line-height: 1.88; 
     letter-spacing: 0.03em;
 }
+
 /*footer*/
 .footer {
     background-color: var(--background-hero-color);
@@ -148,6 +303,11 @@ body {
     text-decoration: none;
     color:var(--hero-color);
     }
+.footer-site-nav-list {
+    list-style: none;
+}
+    
+
 .contact {
     font-style: normal;
     text-decoration: none;
@@ -165,7 +325,7 @@ body {
     letter-spacing: 0.03em;
 }
 .visually-hidden {
-        position: absolute;
+      position: absolute;
       white-space: nowrap;
       width: 1px;
       height: 1px;
