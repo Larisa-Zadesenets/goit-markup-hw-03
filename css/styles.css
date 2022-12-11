@@ -38,8 +38,8 @@ body {
     text-decoration: none;
     color:var(--logo-color);
     }
-.list, .site-nav-list, .contact-nav-list {
-    display: flex;
+.list, .site-nav-list, .contact-nav-list, .list-works {
+    display: flex; 
     
     list-style: none;
     padding: 0;
@@ -122,7 +122,7 @@ img {
     align-items: center;
 }
 .container {
-    width: 1230px;
+    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
@@ -131,19 +131,26 @@ img {
     margin-bottom: 0;
 }
 .footer-container {
-    width: 1230px;
-    padding-left: 215px;
+    width: 1200;
+    height: 252px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
 }
-.section {
 
-}
 .hero {
-    padding: 200px 452px 280px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 200px;
     background-color: var(--background-hero-color);
     color: var(--hero-color);
     text-transform: uppercase;
     text-align: center;
-    width: 1600px;
     height: 600px;
  
     }
@@ -224,7 +231,7 @@ img {
 .section-features {
    
     margin: 0;
-    padding: 94 px 215px 118px;
+    padding: 94 px 215px;
    
     }
 .features-title {
@@ -245,7 +252,8 @@ img {
     }
 .section-team {
     margin: 0;
-    padding: 94px 215px;
+    padding-top: 94px;
+    padding-bottom: 94px;
     background-color: var(--background-team-color);
  
 }
