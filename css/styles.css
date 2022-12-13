@@ -38,7 +38,7 @@ body {
     text-decoration: none;
     color:var(--logo-color);
     }
-.list, .site-nav-list, .contact-nav-list, .list-works {
+.list, .list-filter, .site-nav-list, .contact-nav-list, .list-works {
     display: flex; 
     
     list-style: none;
@@ -61,11 +61,18 @@ body {
     .contact-nav-list .link:focus {
     color: var(--accent-color); 
     }
-    .list {
+    .list  {
         display: flex;
         justify-content: center;
         gap: 30px;
         margin-top: 50px;
+        margin-bottom: 0;
+    }
+    .list-filter {
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+        margin-top: 0;
         margin-bottom: 0;
     }
     .site-nav-list {
@@ -189,7 +196,6 @@ img {
     
     }
 .button-filter-whole {
-    margin-top: 94px;
     padding: 6px 25px;
     min-width: 73px;
     height: 38px;
@@ -207,8 +213,6 @@ img {
 
 .button-filter {
     gap: 8px;
-    margin-top: 94px;
-    margin-bottom: 50px;
     padding: 6px 22px;
     min-width: 73px;
     height: 38px;
@@ -230,13 +234,17 @@ img {
     font-size: 36px;
     line-height: 1.17;
     letter-spacing: 0.06em;
-   
     }
+.image {
+    padding: 30px 0;
+}
 .section-features {
     margin: 0;
-    padding: 94 px 0;
-   
-    }
+    padding: 94px 0;
+   }
+.section-features-title {
+    padding-bottom: 94px;
+}
 .features-title {
     
     margin-bottom: 0;
@@ -259,12 +267,11 @@ img {
     background-color: var(--background-team-color);
  
 }
+
 .name-title {
     display: flex;
     justify-content: center;
-    padding-top: 30px;
-    padding-bottom: 10px;
-    margin: 0;
+    margin-bottom: 10px;
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 16px;
@@ -280,8 +287,12 @@ img {
     letter-spacing: 0.03em;
     }
 .section-portfolio {
-    
-   border: var(--background-features-color)
+   border-bottom: #ECECEC; 
+   border: var(--background-features-color);
+   padding: 94px 0;
+}
+.list-filter {
+    margin-bottom: 50px;
 }
 .portfolio-title {
     margin: 0;
@@ -314,7 +325,8 @@ img {
     }
 .footer-site-nav-list {
     list-style: none;
-    margin: 0;
+    margin-top: 28px;
+    margin-bottom: 9px;
     padding: 0;
 }
     
@@ -326,6 +338,7 @@ img {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+    margin-top: 9px;
 }
 .contact-address {
     font-style: normal;
