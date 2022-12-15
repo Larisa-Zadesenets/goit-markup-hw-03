@@ -65,7 +65,7 @@ body {
         display: flex;
         justify-content: center;
         gap: 30px;
-        margin-top: 50px;
+        
         margin-bottom: 0;
     }
     .list-filter {
@@ -87,15 +87,13 @@ body {
         gap: 50px; 
     }
     .list-works {
-        padding-top: 56px;
-        padding-top: 94px;
         gap: 30px;
         display: flex;
         flex-wrap: wrap;
     }
     .works-title {
         padding: 20px 24px;
-        border: 1px;
+        border: 1px solid #EEEEEE;
     }
 img {
     display: block;
@@ -326,7 +324,6 @@ img {
 .footer-site-nav-list {
     list-style: none;
     margin-top: 28px;
-    margin-bottom: 9px;
     padding: 0;
 }
     
@@ -338,7 +335,7 @@ img {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    margin-top: 9px;
+    padding-top: 12px;
 }
 .contact-address {
     font-style: normal;
